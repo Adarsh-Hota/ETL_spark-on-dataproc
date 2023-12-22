@@ -1,4 +1,5 @@
-// dataproc job using sparkSQL
+## Dataproc job - use sparkSQL and store output in Cloud Storage
+```
 gcloud dataproc jobs submit pyspark \
     --cluster=de-spark-cluster \
     --region=asia-south1 \
@@ -7,8 +8,10 @@ gcloud dataproc jobs submit pyspark \
         --input_green=gs://de-spark-storage/sparkSQL_job/input/green_taxi/green_tripdata_2023-01.parquet \
         --input_yellow=gs://de-spark-storage/sparkSQL_job/input/yellow_taxi/yellow_tripdata_2023-01.parquet \
         --output=gs://de-spark-storage/sparkSQL_job/output
+```
 
-// dataproc job - write data to BigQuery
+## Dataproc job - use sparkSQL and write data to BigQuery
+```
 gcloud dataproc jobs submit pyspark \
     --cluster=de-spark-cluster \
     --region=asia-south1 \
@@ -17,4 +20,5 @@ gcloud dataproc jobs submit pyspark \
     -- \
         --input_green=gs://de-spark-storage/sparkSQL_bigquery_job/input/green_taxi/green_tripdata_2023-01.parquet \
         --input_yellow=gs://de-spark-storage/sparkSQL_bigquery_job/input/yellow_taxi/yellow_tripdata_2023-01.parquet \
-        --output=gs://de-spark-storage/sparkSQL_bigquery_job/output
+        --output=trips_data.revenue_calculation
+```
