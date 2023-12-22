@@ -1,6 +1,3 @@
-#!/usr/bin/env python
-# coding: utf-8
-
 import argparse
 
 import pyspark
@@ -92,5 +89,5 @@ df_result.show(10)
 # Save the data to BigQuery
 df_result.write.format('bigquery') \
     .option("writeMethod", "direct") \
-    .option('table', 'trips_data.revenue_calculation') \
+    .option('table', output) \
     .save()
