@@ -1,5 +1,5 @@
 ## Folder structure - de-spark-storage bucket
-
+```
 ├── de-spark-storage
 │   ├── sparkSQL_job/
 |   |   ├── input
@@ -10,6 +10,7 @@
 |   |   ├── output
 |   |   ├── script
 |   |   |   ├── use_sparkSQL.py
+```
 
 ## Dataproc job - use sparkSQL and store output in Cloud Storage
 ```
