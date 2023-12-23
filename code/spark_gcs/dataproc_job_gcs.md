@@ -1,3 +1,16 @@
+## Folder structure - de-spark-storage bucket
+
+├── de-spark-storage
+│   ├── sparkSQL_job/
+|   |   ├── input
+|   |   |   ├── green_taxi
+|   |   |   |   ├── green_tripdata_2023-01.parquet 
+|   |   |   ├── yellow_taxi
+|   |   |   |   ├── yellow_tripdata_2023-01.parquet
+|   |   ├── output
+|   |   ├── script
+|   |   |   ├── use_sparkSQL.py
+
 ## Dataproc job - use sparkSQL and store output in Cloud Storage
 ```
 gcloud dataproc jobs submit pyspark \
