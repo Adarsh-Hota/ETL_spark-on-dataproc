@@ -1,4 +1,4 @@
-## Folder structure - de-spark-storage bucket
+## Folder structure - 'de-spark-storage' bucket
 ```
 ├── de-spark-storage
 │   ├── sparkSQL_job/

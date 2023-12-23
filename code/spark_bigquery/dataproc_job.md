@@ -1,3 +1,16 @@
+## Folder structure - 'de-spark-storage' bucket
+```
+├── de-spark-storage
+│   ├── sparkSQL_bigquery_job/
+|   |   ├── input
+|   |   |   ├── green_taxi
+|   |   |   |   ├── green_tripdata_2023-01.parquet 
+|   |   |   ├── yellow_taxi
+|   |   |   |   ├── yellow_tripdata_2023-01.parquet
+|   |   ├── script
+|   |   |   ├── use_sparkSQL_write_to_bigquery.py
+```
+
 ## Dataproc job - use sparkSQL and write data to BigQuery
 ```
 gcloud dataproc jobs submit pyspark \
